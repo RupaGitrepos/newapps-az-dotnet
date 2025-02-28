@@ -5,6 +5,9 @@
 
 trigger:
 - main
+variables:
+  ProjectName: '**/*.csproj'
+  BuildConfiguration: 'Release'
 
 pool:
   vmImage: 'windows-latest'
@@ -13,16 +16,16 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'restore'
-    projects: '**/*.csproj'
+    projects: $(ProjectName)
     feedsToUse: 'select'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '**/*.csproj'
-    arguments: '--configuration Release'
+    projects: $(ProjectName)
+    arguments: '--configuration $(BuildConfiguration)'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'publish'
     publishWebProjects: true
-    arguments: '-c Release --output $(Build.ArtifactStagingDirectory)'
+    arguments: '-c $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
 
