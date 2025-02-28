@@ -13,6 +13,10 @@ pool:
   vmImage: 'windows-latest'
 
 steps:
+- script: 
+   echo Write your commands here...
+   echo Hello World
+   echo $(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)
 - task: DotNetCoreCLI@2
   displayName: 'Restore Project'
   inputs:
