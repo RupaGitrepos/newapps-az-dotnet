@@ -14,21 +14,25 @@ pool:
 
 steps:
 - task: DotNetCoreCLI@2
+  displayName: 'Restore Project'
   inputs:
     command: 'restore'
     projects: $(ProjectName)
     feedsToUse: 'select'
 - task: DotNetCoreCLI@2
+  displayName: 'Build Project'
   inputs:
     command: 'build'
     projects: $(ProjectName)
     arguments: '--configuration $(BuildConfiguration)'
 - task: DotNetCoreCLI@2
+  displayName: 'Publish Project'
   inputs:
     command: 'publish'
     publishWebProjects: true
     arguments: '-c $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifacts'
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
