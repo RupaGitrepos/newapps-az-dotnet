@@ -10,12 +10,13 @@ variables:
   BuildConfiguration: 'Release'
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 
 steps:
 - script: 
    echo Write your commands here...
    echo Hello World
+   echo $(Build.sourceBranchName)
    echo $(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)
 - task: DotNetCoreCLI@2
   displayName: 'Restore Project'

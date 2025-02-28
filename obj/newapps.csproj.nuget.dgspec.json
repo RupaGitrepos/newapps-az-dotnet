@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\ppconsole\\testsample\\newapps\\newapps\\newapps.csproj": {}
+    "C:\\Users\\Rupashravan\\Source\\Repos\\newapps-az-dotnet\\newapps.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\ppconsole\\testsample\\newapps\\newapps\\newapps.csproj": {
+    "C:\\Users\\Rupashravan\\Source\\Repos\\newapps-az-dotnet\\newapps.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\ppconsole\\testsample\\newapps\\newapps\\newapps.csproj",
+        "projectUniqueName": "C:\\Users\\Rupashravan\\Source\\Repos\\newapps-az-dotnet\\newapps.csproj",
         "projectName": "newapps",
-        "projectPath": "C:\\Projects\\ppconsole\\testsample\\newapps\\newapps\\newapps.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\ppconsole\\testsample\\newapps\\newapps\\obj\\",
+        "projectPath": "C:\\Users\\Rupashravan\\Source\\Repos\\newapps-az-dotnet\\newapps.csproj",
+        "packagesPath": "C:\\Users\\Rupashravan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Rupashravan\\Source\\Repos\\newapps-az-dotnet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Rupashravan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net6.0": {
@@ -68,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
